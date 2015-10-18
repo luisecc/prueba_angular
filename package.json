@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/luisecc/prueba_angular"
+    "url": "https://github.com/carlosazaustre/angularapp-gulp-boilerplate"
   },
   "dependencies": {},
   "devDependencies": {

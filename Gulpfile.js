@@ -1,6 +1,10 @@
+// File: Gulpfile.js
+'use strict';
 var gulp    = require('gulp'),
     connect = require('gulp-connect'),
-    historyApiFallback = require('connect-history-api-fallback');
+    historyApiFallback = require('connect-history-api-fallback'),
+    stylus = require('gulp-stylus'),
+    nib    = require('nib');
 
 // Servidor web de desarrollo
 gulp.task('server', function() {
@@ -14,10 +18,6 @@ gulp.task('server', function() {
         }
     });
 });
-
-
-var stylus = require('gulp-stylus'),
-    nib    = require('nib');
 
 // Pre-procesa archivos Stylus a CSS y recarga los cambios
 gulp.task('css', function() {
