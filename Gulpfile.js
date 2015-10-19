@@ -70,6 +70,26 @@ gulp.task('wiredep', function () {
 
 
 
+var templateCache = require('gulp-angular-templatecache');
+
+gulp.task('templates', function() {
+    gulp.src('./app/views/**/*.tpl.html')
+        .pipe(templateCache({
+            root: 'views/',
+            module: 'blog.templates',
+            standalone: true
+        }))
+        .pipe(gulp.dest('./app/scripts'));
+});
+
+
+
+
+
+
+
+
+
 
 // Vigila cambios que se produzcan en el código
 // y lanza las tareas relacionadas

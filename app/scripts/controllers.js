@@ -18,7 +18,7 @@
         };
     };
 
-    function PostDetailController ($routeParams, Post, Comment) {
+    function PostDetailController ($routeParams, Post, Comment, User) {
         this.post = {};
         this.comments = {};
         this.user = {}
