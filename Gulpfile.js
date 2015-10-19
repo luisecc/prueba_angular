@@ -22,7 +22,7 @@ var gulp      = require('gulp'),
 gulp.task('server', function() {
     connect.server({
         root: './app',
-        hostname: '0.0.0.0',
+        hostname: '127.0.0.1',
         port: 8080,
         livereload: true,
         middleware: function(connect, opt) {
@@ -63,7 +63,6 @@ gulp.task('css', function() {
 // Recarga el navegador cuando hay cambios en el HTML
 gulp.task('html', function() {
     gulp.src('./app/**/*.html')
-        .pipe()
         .pipe(connect.reload());
 });
 
